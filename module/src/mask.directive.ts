@@ -10,7 +10,9 @@ declare let $: any;
 })
 export class MaskDirective {
 
-  @Input() options: Object = {};
+  @Input() options: Object = {
+    reverse: true
+  };
   @Input('mask') pattern: string;
   @Input('ngModel') ngModel: string;
   @Input('keepMask') keepMask:boolean;
